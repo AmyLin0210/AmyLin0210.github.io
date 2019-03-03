@@ -5,8 +5,9 @@ body {
 
 .title {
     /* skin */
-    margin-top: 3rem;
-    margin-left: 3rem;
+    margin-top: 4%;
+    margin-left: 5%;
+    height: 20%;
     display: block;
 }
 
@@ -42,32 +43,49 @@ body {
 .content {
     /* position */
     display: block;
+
+    /* skin */
+    width: 70%;
+    height: 80%;
+    margin: 5rem auto; 
 }
 
 .content .content__article {
     /* position */
-    display: inline-block;
+    display: block;
+    float: left;
 
     /* skin */
-    margin-left: 5%;
+    margin-top: 15%;
     width: 40%;
 }
 
 .content .content__article .content__article--title {
     /* position */
     display: block;
+    float: top;
+
+    /* skin */
 }
 
 .content .content__article .content__article--content {
     /* position */
     display: block;
-    width: 15rem;
+
+    /* skin */
+    margin-top: 5%;
+    width: 80%;
     height: auto;
+    font-size: 1.4rem;
 }
 
 .content .content__image {
     /* position */
     display: inline-block;
-    width: 30rem;
+    position: relative;
+
+    /* skin */
+    margin-left: 6%;
+    width: 50%;
     height: auto;
 }
