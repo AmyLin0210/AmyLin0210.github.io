@@ -10,43 +10,50 @@
         <header class="title">
             <img class="title__image" src="https://i.imgur.com/2gqYo2W.png" alt="heforshe"/>
             <section class="title__tag">
-                <section class="tag__block">
+                <section class="title__tag--block">
                     <h2 class="tag__content" id="title__tag--about">ABOUT</h2>
-                    <aside class = "tag__content--line"></aside>
+                    <aside class = "tag__content--line" id="tag__line--about"></aside>
                 </section>
-                <section class="tag__block">
+                <section class="title__tag--block">
                     <h2 class="tag__content" id="title__tag--impack">IMPACK</h2>
-                    <aside class = "tag__content--line tag__content--line-hidden"></aside>
+                    <aside class = "tag__content--line tag__content--line-hidden" id="tag__line--impack"></aside>
                 </section>
-                <section class="tag__block">
+                <section class="title__tag--block">
                     <h2 class="tag__content" id="title__tag--movement">MOVEMENT</h2>
-                    <aside class = "tag__content--line tag__content--line-hidden"></aside>
+                    <aside class = "tag__content--line tag__content--line-hidden" id="tag__line--movement"></aside>
                 </section>
             </section>
             <img class="title__logo" src="https://i.imgur.com/8OWv8CI.jpg">
         </header>
         <article class="content">
-            <section class="content__article">
+            <section class="content__article " id="article--about">
                 <h2 class="content__article--title">JOIN THE GLOBAL MOVEMENT</h2>
                 <p class="content__article--content">
                     Millions of people around the world are now part of the United Nations global solidarity movement for gender equality. Get inspired by their stories and take action.
                 </p>
             </section>
+            <section class="content__article content__article--hidden" id="article--impack">
+                <h2 class="content__article--title">GLOBAL CHAMPIONS FOR GENDER EQUALITY</h2>
+                <p class="content__article--content">
+                        Meet the visionary leaders taking action for gender equality in their countries, organizations and beyond. 
+                </p>
+            </section>
             <img class="content__image" src="https://i.imgur.com/JIi2jIJ.png" alt="EmmaWatson">
             <aside class="content__tag">
                 <section class="tag__block">
-                    <section class="tag__line"></section> 
-                    <p class="tag__content">ABOUT</p>
+                    <section class="tag__line" id="aside__line--about"></section> 
+                    <p class="tag__content" id="aside__content--about">ABOUT</p>
                 </section>
                 <section class="tag__block">
-                    <section class="tag__line tag__line--hidden"></section> 
-                    <p class="tag__content tag__content--hidden">I COMMIT</p>
+                    <section class="tag__line tag__line--hidden" id="aside__line--impack"></section> 
+                    <p class="tag__content tag__content--hidden" id="aside__content--impack">I COMMIT</p>
                 </section>
                 <section class="tag__block">
-                    <section class="tag__line tag__line--hidden"></section> 
-                    <p class="tag__content tag__content--hidden">MOVEMENT</p>
+                    <section class="tag__line tag__line--hidden" id="aside__line--movement"></section> 
+                    <p class="tag__content tag__content--hidden" id="aside__content--movement">MOVEMENT</p>
                 </section>
             </aside>
         </article> 
+        <script src="index.js"></script>
     </body>
 </html>
