@@ -2,12 +2,12 @@ let titleAbout = document.getElementById("title__tag--about");
 let titleImpack = document.getElementById("title__tag--impack");
 let titleMo = document.getElementById;
 
-titleImpack.addEventListener("click", function(){
+titleImpack.addEventListener("mouseover", function(){
     hideAll();
     showArticle( "impack" );
 });
 
-titleAbout.addEventListener("click", function(){
+titleAbout.addEventListener("mouseover", function(){
     hideAll();
     showArticle( "about" );
 });
@@ -46,4 +46,5 @@ function showArticle( articleId ) {
 
     let asideTag = document.getElementById("aside__content--" + articleId);
     asideTag.classList.remove("tag__content--hidden");
+    asideTag.classList.add("transition");
 }
