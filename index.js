@@ -1,6 +1,6 @@
 let titleAbout = document.getElementById("title__tag--about");
 let titleImpack = document.getElementById("title__tag--impack");
-let titleMo = document.getElementById;
+let titleMo = document.getElementById("title__tag--movement");
 
 titleImpack.addEventListener("mouseover", function(){
     hideAll();
@@ -10,6 +10,11 @@ titleImpack.addEventListener("mouseover", function(){
 titleAbout.addEventListener("mouseover", function(){
     hideAll();
     showArticle( "about" );
+});
+
+titleMo.addEventListener("mouseover", function(){
+    hideAll();
+    showArticle( "movement" );
 });
 
 function hideAll() {  
