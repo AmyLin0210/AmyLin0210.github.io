@@ -37,6 +37,11 @@ function hideAll() {
     for ( let n = 0; n < temp.length; ++n) {
         temp[n].classList.add("tag__content--hidden");
     }
+
+    temp = document.getElementsByClassName("content__image");
+    for ( let n = 0; n < temp.length; ++n) {
+        temp[n].classList.add("content__image--hidden");
+    }
 }
 
 function showArticle( articleId ) {
@@ -51,5 +56,9 @@ function showArticle( articleId ) {
 
     let asideTag = document.getElementById("aside__content--" + articleId);
     asideTag.classList.remove("tag__content--hidden");
+    asideTag.classList.add("transition");
+
+    let image = document.getElementById("image--" + articleId);
+    image.classList.remove("content__image--hidden");
     asideTag.classList.add("transition");
 }
