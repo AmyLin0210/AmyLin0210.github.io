@@ -225,6 +225,7 @@ body {
 }
 
 .content__image--hidden {
+    /* skin */
     visibility: hidden;
     width: 0;
     opacity: 0;
