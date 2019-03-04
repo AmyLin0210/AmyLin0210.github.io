@@ -1,3 +1,60 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+
 body {
     /* skin */
     margin: 0;
@@ -73,17 +130,14 @@ body {
 
 .content {
     /* position */
-    display: block;
+    display: inline-block;
 
     /* skin */
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: 20%;
+    margin-top: 3%;
     padding-bottom: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    /*
-    border-bottom: solid 3rem rgba(184, 181, 200, 0.9);
-    */
 }
 
 .content .content__article {
@@ -93,7 +147,6 @@ body {
 
     /* skin */
     margin-top: 15%;
-    margin-left: 15%;
     width: 35%;
 }
 
@@ -103,6 +156,7 @@ body {
     float: top;
 
     /* skin */
+    font-size: 2rem;
 }
 
 .content .content__article .content__article--content {
@@ -129,9 +183,66 @@ body {
 }
 
 .bottom__line {
+    /* position */
     z-index: -2;
     position: absolute;
+
+    /* skin */
     width: 100%;
     bottom: 0;
     border-bottom: solid 3rem rgba(184, 181, 200, 0.9);
+}
+
+.content .content__tag {
+    /* position */
+    display: inline-block;
+    left: 0;
+
+    /* skin */
+    margin-bottom: 17%;
+    width: 20%;
+}
+
+.content .content__tag .tag__block {
+    /* position */
+    display: block;
+    float: right;
+
+    /* skin */
+    width: 80%;
+    height: auto;
+}
+
+.tag__block .tag__content {
+    /* position */
+    display: block;
+    float: right;
+
+    /* skin */
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.tag__block .tag__line {
+    /* position */
+    display: block;
+    float: right;
+
+    /* skin */
+    width: 50%;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    border-bottom: solid .2rem  #D2C8C8;
+}
+
+.tag__block .tag__content--hidden {
+    visibility: hidden;
+}
+
+.tag__block .tag__line--hidden {
+    /* skin */
+    width: 30%;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    border-bottom: solid .2rem  #D2C8C8;
 }
